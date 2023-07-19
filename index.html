@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockman APIs</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #000000;
+      color: #ffffff;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #000000;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin: 0;
+      color: #ffffff;
+      margin-bottom: 30px;
+      opacity: 0;
+      animation: fade-in 1.5s forwards;
+    }
+
+    .about-section {
+      font-size: 18px;
+      color: #ffffff;
+      opacity: 0;
+      animation: fade-in 1.5s forwards;
+    }
+
+    .link-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+    }
+
+    .link-container a {
+      display: block;
+      margin-bottom: 15px;
+      padding: 12px 24px;
+      background-color: transparent;
+      color: #ffffff;
+      text-decoration: none;
+      border: 1px solid #ffffff;
+      border-radius: 0;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+      cursor: pointer;
+      opacity: 0;
+      animation: fade-in 1.5s forwards;
+    }
+
+    .link-container a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      font-size: 16px;
+      opacity: 0;
+      animation: fade-in 1.5s forwards;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #ffffff;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #ffffff;
+      font-size: 14px;
+      opacity: 0;
+      animation: fade-in 1.5s forwards;
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Blockman APIs</h1>
+    <div class="about-section">
+      <p>Blockman APIs is a tool for Blockman GO.</p>
+    </div>
+    <div class="link-container">
+      <a href="https://userinfo.pages.dev">User Info</a>
+      <a href="https://claninfo.pages.dev">Clan Info</a>
+      <a href="https://partyinfo.pages.dev">Party Info</a>
+      <a href="https://gaminginfo.pages.dev">Gaming Info</a>
+    </div>
+    <div class="social-links">
+      <a href="https://discord.gg/Pu25cu2f">Discord</a>
+      <a href="https://youtube.com/channel/UCt81aQMJw9j7_QEf8fzat3A">YouTube</a>
+    </div>
+    <footer>
+      <p>&copy; 2023 Blockman APIs</p>
+    </footer>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var elements = document.querySelectorAll("h1, .about-section, .link-container a, .social-links, footer");
+      var delay = 0.5;
+
+      elements.forEach(function(element) {
+        element.style.animationDelay = delay + "s";
+        delay += 0.5;
+      });
+    });
+  </script>
+</body>
+</html>
